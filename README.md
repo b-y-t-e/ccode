@@ -15,4 +15,3 @@ CCode is a low-code tool designed for developers working with C# / .NET technolo
 **Additional Project Information:**
 
 The project will showcase the architecture at the C3 Level (Component Level), providing detailed visualizations of the components within the system. Additionally, it will feature the visualization of endpoints (APIs) and connections with messaging queues such as RabbitMQ and Kafka.
-
