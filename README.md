@@ -7,6 +7,7 @@ SeeCode
 **Technology:** 
 
 C# / .NET
+AvaloniaUI
 
 **Description:** 
 
