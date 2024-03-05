@@ -6,8 +6,7 @@
 
 **Technology:** 
 
-> C# / .NET
-> 
+> C# / .NET \
 > AvaloniaUI
 
 **Description:** 
