@@ -6,9 +6,8 @@ SeeCode
 
 **Technology:** 
 
-C# / .NET
-
-AvaloniaUI
+* C# / .NET
+* AvaloniaUI
 
 **Description:** 
 
