@@ -2,7 +2,7 @@
 
 public interface ISpeechRecognizer
 {
-    IEnumerable<RecognizedSpeech> RecognizeSpeech();
+    IAsyncEnumerable<RecognizedSpeech> RecognizeSpeech();
 }
 
 public class RecognizedSpeech
