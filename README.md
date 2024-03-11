@@ -1,9 +1,5 @@
 # CCode
 
-**Full Name:** 
-
-> SeeCode
-
 **Technology:** 
 
 > C# / .NET \
@@ -11,8 +7,4 @@
 
 **Description:** 
 
-> CCode is a low-code tool designed for developers working with C# / .NET technologies. It allows users to visually understand the structure of their code solutions, enabling the editing of workflows and behaviors in a more intuitive way. CCode simplifies the development process by providing a visual representation of code, making it easier to navigate, modify, and improve software projects.
-
-**Additional Project Information:**
-
-> The project will showcase the architecture at the C3 Level (Component Level), providing detailed visualizations of the components within the system. Additionally, it will feature the visualization of endpoints (APIs) and connections with messaging queues such as RabbitMQ and Kafka.
+> SeeCode is an innovative application that redefines the way programmers interact with their computing environments through the power of AI. Aimed at developers working with C# / .NET technologies, SeeCode combines the simplicity of a low-code platform with advanced AI capabilities to accelerate and enhance the software development process. 
