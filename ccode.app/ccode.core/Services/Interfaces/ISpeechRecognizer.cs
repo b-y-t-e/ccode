@@ -4,8 +4,6 @@ namespace ccode.core.Services.Interfaces;
 
 public interface ISpeechRecognizer
 {
-    IAsyncEnumerable<RecognizedSpeech> RecognizeSpeech();
+    IAsyncEnumerable<Transcription> RecognizeSpeech(
+        CancellationToken cancellationToken);
 }
-
-public record RecognizedSpeech(
-    TranscribedSpeech Transcription);

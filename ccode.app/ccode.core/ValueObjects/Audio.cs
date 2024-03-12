@@ -3,41 +3,41 @@ using ccode.core.Interfaces;
 
 namespace ccode.core.ValueObjects;
 
-public readonly struct TranscribedSpeech : IEquatable<TranscribedSpeech>, IValueObject<byte[]>
+public readonly struct Audio : IEquatable<Audio>, IValueObject<byte[]>
 {
     public byte[] Value { get; }
 
     ////////////////////////////////
-    public TranscribedSpeech(byte[] value)
+    public Audio(byte[] value)
         => Value = value;
 
     ////////////////////////////////
 
-    public static TranscribedSpeech From(byte[] value)
+    public static Audio From(byte[] value)
     {
-        return new TranscribedSpeech(value);
+        return new Audio(value);
     }
 
     ////////////////////////////////
 
-    public static implicit operator byte[](TranscribedSpeech self)
+    public static implicit operator byte[](Audio self)
         => self.Value;
 
     ////////////////////////////////
 
-    public static bool operator ==(TranscribedSpeech value1, TranscribedSpeech value2)
+    public static bool operator ==(Audio value1, Audio value2)
         => isEqual(value1.Value, value2.Value);
 
-    public static bool operator !=(TranscribedSpeech value1, TranscribedSpeech value2)
+    public static bool operator !=(Audio value1, Audio value2)
         => !isEqual(value1.Value, value2.Value);
 
     ////////////////////////////////
 
-    public bool Equals(TranscribedSpeech other) =>
+    public bool Equals(Audio other) =>
         isEqual(Value, other.Value);
 
     public override bool Equals(object obj) =>
-        obj is TranscribedSpeech other && Equals(other);
+        obj is Audio other && Equals(other);
 
     ////////////////////////////////
 

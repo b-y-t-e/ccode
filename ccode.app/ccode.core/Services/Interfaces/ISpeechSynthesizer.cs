@@ -4,9 +4,6 @@ namespace ccode.core.Services.Interfaces;
 
 public interface ISpeechSynthesizer
 {
-    IAsyncEnumerable<SynthesizedSpeech> SynthesizeSpeech(
-        TranscribedSpeech transcribedSpeech);
+    IAsyncEnumerable<Audio> SynthesizeSpeech(
+        Transcription transcription);
 }
-
-public record SynthesizedSpeech(
-    Speech Speech);

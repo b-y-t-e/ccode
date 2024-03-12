@@ -2,6 +2,7 @@
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
+using ccode.infrastructure.Services.Interfaces;
 
 namespace ccode.infrastructure.Services;
 

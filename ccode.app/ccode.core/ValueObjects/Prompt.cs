@@ -1,43 +1,44 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using ccode.core.Interfaces;
 
 namespace ccode.core.ValueObjects;
 
-public readonly struct Speech : IEquatable<Speech>, IValueObject<byte[]>
+public readonly struct Prompt : IEquatable<Prompt>, IValueObject<String>
 {
-    public byte[] Value { get; }
+    public String Value { get; }
 
     ////////////////////////////////
-    public Speech(byte[] value)
+    public Prompt(String value)
         => Value = value;
 
     ////////////////////////////////
 
-    public static Speech From(byte[] value)
+    public static Prompt From(String value)
     {
-        return new Speech(value);
+        return new Prompt(value);
     }
 
     ////////////////////////////////
 
-    public static implicit operator byte[](Speech self)
+    public static implicit operator String(Prompt self)
         => self.Value;
 
     ////////////////////////////////
 
-    public static bool operator ==(Speech value1, Speech value2)
+    public static bool operator ==(Prompt value1, Prompt value2)
         => isEqual(value1.Value, value2.Value);
 
-    public static bool operator !=(Speech value1, Speech value2)
+    public static bool operator !=(Prompt value1, Prompt value2)
         => !isEqual(value1.Value, value2.Value);
 
     ////////////////////////////////
 
-    public bool Equals(Speech other) =>
+    public bool Equals(Prompt other) =>
         isEqual(Value, other.Value);
 
     public override bool Equals(object obj) =>
-        obj is Speech other && Equals(other);
+        obj is Prompt other && Equals(other);
 
     ////////////////////////////////
 
