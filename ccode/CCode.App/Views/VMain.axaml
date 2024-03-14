@@ -4,22 +4,22 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="clr-namespace:CCode.UI;assembly=CCode.UI"
              xmlns:controls="clr-namespace:CCode.UI.Controls;assembly=CCode.UI"
-             xmlns:vm="clr-namespace:ccode.app.ViewModels"
+             xmlns:vm="clr-namespace:CCode.App.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="ccode.app.Views.MainView"
-             x:DataType="vm:MainViewModel">
+             x:Class="CCode.App.Views.VMain"
+             x:DataType="vm:VMMain">
     <Design.DataContext>
-        <vm:MainViewModel />
+        <vm:VMMain />
     </Design.DataContext>
     <Grid Margin="20">
         <DockPanel>
             <StackPanel DockPanel.Dock="Top">
                 <Button IsVisible="{Binding IsListening}"
-                        Command="{Binding Pause}">
+                        Command="{Binding PauseCommand}">
                     Pause
                 </Button>
                 <Button IsVisible="{Binding IsListening, Converter={StaticResource InverseBooleanConverter}}"
-                        Command="{Binding Record}">
+                        Command="{Binding RecordCommand}">
                     Record
                 </Button>
             </StackPanel>

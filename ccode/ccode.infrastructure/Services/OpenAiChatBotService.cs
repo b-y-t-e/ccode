@@ -1,12 +1,12 @@
 using System.Text;
 using ccode.core.Services.Interfaces;
 using ccode.core.ValueObjects;
-using ccode.infrastructure.Options;
+using CCode.Infrastructure.Options;
 using OpenAI;
 using OpenAI.Audio;
 using OpenAI.Chat;
 
-namespace ccode.infrastructure.Services;
+namespace CCode.Infrastructure.Services;
 
 public class OpenAiChatBotService : IChatBotService
 {

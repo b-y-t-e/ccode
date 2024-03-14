@@ -27,7 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="Views\MainView.axaml" />
+      <Content Include="Views\VMain.axaml" />
       <Content Include="Views\MainWindow.axaml" />
     </ItemGroup>
 </Project>

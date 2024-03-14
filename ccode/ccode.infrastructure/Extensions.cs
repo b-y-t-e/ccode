@@ -1,8 +1,8 @@
 ﻿using ccode.core.Services.Interfaces;
-using ccode.infrastructure.Services;
+using CCode.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ccode.infrastructure;
+namespace CCode.Infrastructure;
 
 public static class Extensions
 {

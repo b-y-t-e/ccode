@@ -1,4 +1,4 @@
-﻿namespace ccode.infrastructure.Options;
+﻿namespace CCode.Infrastructure.Options;
 
 public class SpeechOptions
 {

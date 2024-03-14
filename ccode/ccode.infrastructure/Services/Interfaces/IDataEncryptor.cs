@@ -1,4 +1,4 @@
-namespace ccode.infrastructure.Services.Interfaces;
+namespace CCode.Infrastructure.Services.Interfaces;
 
 public interface IDataEncryptor
 {

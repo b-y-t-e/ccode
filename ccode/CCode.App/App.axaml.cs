@@ -2,9 +2,10 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
-using ccode.app.ViewModels;
-using ccode.app.Views;
-using ccode.infrastructure;
+using CCode.App.ViewModels;
+using CCode.App.Views;
+using CCode.Infrastructure;
+using CCode.Infrastructure.Options;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ccode.app;
@@ -30,7 +31,7 @@ public partial class App : Application
         // Creates a ServiceProvider containing services from the provided IServiceCollection
         var services = collection.BuildServiceProvider();
 
-        var vm = services.GetRequiredService<MainViewModel>();
+        var vm = services.GetRequiredService<VMMain>();
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
             desktop.MainWindow = new MainWindow
@@ -40,7 +41,7 @@ public partial class App : Application
         }
         else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
         {
-            singleViewPlatform.MainView = new MainView
+            singleViewPlatform.MainView = new VMain
             {
                 DataContext = vm
             };

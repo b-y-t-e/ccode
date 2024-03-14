@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using ccode.app.ViewModels;
+using CCode.App.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ccode.app;

@@ -2,9 +2,9 @@
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using ccode.infrastructure.Services.Interfaces;
+using CCode.Infrastructure.Services.Interfaces;
 
-namespace ccode.infrastructure.Services;
+namespace CCode.Infrastructure.Services;
 
 public class DataEncryptor : IDataEncryptor
 {
