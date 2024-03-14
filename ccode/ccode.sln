@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ccode.app", "ccode.app\ccode.app.csproj", "{EBFA8512-1EA5-4D8C-B4AC-AB5B48A6D568}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CCode.App", "CCode.App\CCode.App.csproj", "{EBFA8512-1EA5-4D8C-B4AC-AB5B48A6D568}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ccode.app.Desktop", "ccode.app.Desktop\ccode.app.Desktop.csproj", "{ABC31E74-02FF-46EB-B3B2-4E6AE43B456C}"
 EndProject
@@ -20,11 +20,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{FF27B03B-D37E-4840-84BC-0A4B584C1865}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ccode.ui", "ccode.ui\ccode.ui.csproj", "{454BAAEC-0705-49DF-8538-E85C9CCB67AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCode.UI", "CCode.UI\CCode.UI.csproj", "{454BAAEC-0705-49DF-8538-E85C9CCB67AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ccode.infrastructure", "ccode.infrastructure\ccode.infrastructure.csproj", "{81B88C5D-DBCB-4086-8F88-F19F7169BA89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCode.Infrastructure", "CCode.Infrastructure\CCode.Infrastructure.csproj", "{81B88C5D-DBCB-4086-8F88-F19F7169BA89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ccode.core", "ccode.core\ccode.core.csproj", "{DEA0F9CE-7507-47F5-A06E-DBF83EF1C6BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCode.Core", "CCode.Core\CCode.Core.csproj", "{DEA0F9CE-7507-47F5-A06E-DBF83EF1C6BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

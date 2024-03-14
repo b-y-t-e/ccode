@@ -4,10 +4,11 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>ccode.infrastructure</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ccode.core\ccode.core.csproj" />
+      <ProjectReference Include="..\CCode.Core\CCode.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>

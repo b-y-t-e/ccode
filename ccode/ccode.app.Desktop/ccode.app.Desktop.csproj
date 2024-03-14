@@ -19,6 +19,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\ccode.app\ccode.app.csproj"/>
+        <ProjectReference Include="..\CCode.App\CCode.App.csproj" />
     </ItemGroup>
 </Project>
