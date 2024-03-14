@@ -3,7 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Media;
 using Newtonsoft.Json;
 
-namespace ccode.ui.Controls;
+namespace CCode.UI.Controls;
 
 public class RoundedButton : Button
 {

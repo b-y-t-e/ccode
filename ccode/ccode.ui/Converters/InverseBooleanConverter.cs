@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using Avalonia.Data.Converters;
 
-namespace ccode.ui.Converters;
+namespace CCode.UI.Converters;
 
 public class InverseBooleanConverter : IValueConverter
 {

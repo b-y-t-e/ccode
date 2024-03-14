@@ -4,7 +4,7 @@ using Avalonia.Media;
 using DynamicData;
 using Newtonsoft.Json;
 
-namespace ccode.ui;
+namespace CCode.UI;
 
 public class Node
 {
