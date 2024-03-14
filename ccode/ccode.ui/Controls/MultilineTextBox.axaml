@@ -1,0 +1,11 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="CCode.UI.Controls.MultilineTextBox">
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled">
+        <TextBox AcceptsReturn="True" BorderThickness="0"
+                 TextWrapping="{Binding TextWrapping, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}"
+                 Text="{Binding Text, Mode=TwoWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}"
+                 IsReadOnly="{Binding IsReadOnly, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}" />
+    </ScrollViewer>
+</UserControl>
