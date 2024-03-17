@@ -12,6 +12,7 @@ public static class Extensions
         services.AddTransient<ISpeechRecognizer, AzureSpeechRecognizer>();
         services.AddTransient<IChatBotService, OpenAiChatBotService>();
         services.AddTransient<ISpeechSynthesizer, OpenAiSpeechSynthesizer>();
+        services.AddTransient<IClipboardService, OsWindowsClipboardService>();
 
         return services;
     }
