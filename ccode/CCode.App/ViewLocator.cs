@@ -2,6 +2,7 @@ using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
 using CCode.App.ViewModels;
+using CCode.UI.ViewModels;
 
 namespace ccode.app;
 

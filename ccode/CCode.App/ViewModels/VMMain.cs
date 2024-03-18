@@ -1,20 +1,26 @@
 ﻿using System;
 using System.Reactive;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Avalonia;
+using Avalonia.Controls;
 using ccode.core.Services.Interfaces;
+using CCode.UI.ViewModels;
 using ReactiveUI;
 
 namespace CCode.App.ViewModels;
 
 public class VMMain : ViewModelBase
 {
-    private readonly ISpeechRecognizer _speechRecognizer;
+    private IClipboardService _clipboardService;
+    private ISpeechRecognizer _speechRecognizer;
     private CancellationTokenSource _cancellationTokenSource;
 
     ////////////////////////////////////////
 
     private bool _isListening;
+
     public bool IsListening
     {
         get => _isListening;
@@ -22,6 +28,7 @@ public class VMMain : ViewModelBase
     }
 
     private string _transcription;
+
     public string Transcription
     {
         get => _transcription;
@@ -35,9 +42,10 @@ public class VMMain : ViewModelBase
 
     ////////////////////////////////////////
 
-    public VMMain(ISpeechRecognizer speechRecognizer)
+    public VMMain(ISpeechRecognizer speechRecognizer, IClipboardService clipboardService)
     {
         _speechRecognizer = speechRecognizer;
+        _clipboardService = clipboardService;
         _cancellationTokenSource = new CancellationTokenSource();
 
         Transcription = "";
@@ -54,9 +62,14 @@ public class VMMain : ViewModelBase
             _cancellationTokenSource = new CancellationTokenSource();
             await foreach (var transcription in _speechRecognizer.RecognizeSpeech(_cancellationTokenSource.Token))
             {
+                var clipboardText = TopLevel.GetTopLevel(this.View)?.Clipboard;
+
+                StringBuilder text = new StringBuilder();
                 if (!Transcription.EndsWith(" "))
-                    Transcription += " ";
-                Transcription += transcription.ToString();
+                    text.Append(" ");
+                text.Append(transcription);
+                _clipboardService.PasteFromClipboard();
+                Transcription += text.ToString();
             }
         });
     }
