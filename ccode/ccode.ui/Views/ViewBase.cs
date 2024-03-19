@@ -11,6 +11,7 @@ public class ViewBase : UserControl
             viewModelBase.View = this;
         base.OnDataContextChanged(e);
     }
+    
 
     protected override void OnDataContextBeginUpdate()
     {
